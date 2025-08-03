@@ -1,0 +1,8 @@
+com\example\beans\Bank.class
+com\example\beans\Vehicle.class
+com\example\beans\BikeBean.class
+com\example\SpringBootDemoApplication.class
+com\example\config\MyCollectionConfig.class
+com\example\beans\PropertiesBean.class
+com\example\beans\CarBean.class
+com\example\beans\FirstSpringBootBean.class

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Product bean -->
+    <bean id="product" class="com.springdemo.Product">
+        <constructor-arg value="101" />
+        <constructor-arg value="Bluetooth Headset" />
+        <constructor-arg value="1999.99" />
+    </bean>
+
+    <!-- Purchase bean with constructor autowiring -->
+    <bean id="purchase" class="com.springdemo.Purchase" autowire="constructor">
+        <constructor-arg value="1"/>
+        <constructor-arg>
+            <bean class="java.util.Date"/>
+        </constructor-arg>
+    </bean>
+
+</beans>

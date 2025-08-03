@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+         http://www.springframework.org/schema/beans
+         https://www.springframework.org/schema/beans/spring-beans.xsd
+         http://www.springframework.org/schema/aop
+         https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!-- Service Bean -->
+    <bean id="shoppingService" class="com.service.ShoppingService" />
+
+    <!-- Aspect Bean -->
+    <bean id="loggingAspect" class="com.aspect.LoggingAspect" />
+
+    <!-- AOP Configuration -->
+    <aop:config>
+        <aop:aspect ref="loggingAspect">
+
+            <!-- Before -->
+            <aop:pointcut id="allMethods" expression="execution(* com.service.*.*(..))" />
+            <aop:before pointcut-ref="allMethods" method="logBefore" />
+
+            <!-- After Returning -->
+            <aop:after-returning pointcut-ref="allMethods" method="logAfterReturning" />
+
+            <!-- After Throwing -->
+            <aop:after-throwing pointcut-ref="allMethods" method="logAfterThrowing" throwing="ex" />
+
+            <!-- Around (optional, if using MethodInterceptor) -->
+            <!-- Uncomment below if using aop:aspectj-autoproxy -->
+            <!--
+            <aop:around pointcut-ref="allMethods" method="logAround"/>
+            -->
+
+        </aop:aspect>
+    </aop:config>
+
+</beans>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Product Bean -->
+    <bean id="product" class="com.springdemo.Product">
+        <constructor-arg value="101" />
+        <constructor-arg value="Laptop" />
+        <constructor-arg value="55000.0" />
+    </bean>
+
+    <!-- Date Bean (java.util.Date) -->
+    <bean id="purchaseDate" class="java.util.Date" />
+
+    <!-- Purchase Bean -->
+    <bean id="purchase" class="com.springdemo.Purchase">
+        <constructor-arg value="1" />                     <!-- int purchaseId -->
+        <constructor-arg ref="purchaseDate" />            <!-- java.util.Date -->
+        <constructor-arg ref="product" />                 <!-- Product -->
+    </bean>
+
+</beans>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+
+    <!-- Bank Bean -->
+    <bean id="bank" class="com.wipro.springdemo.Bank">
+        <constructor-arg value="101" />
+        <constructor-arg value="State Bank of India" />
+    </bean>
+
+    <!-- Account Bean -->
+    <bean id="account" class="com.wipro.springdemo.Account">
+        <constructor-arg value="123456" />
+        <constructor-arg value="Pooja Perisetla" />
+        <constructor-arg value="25000.75" />
+        <constructor-arg ref="bank" />
+    </bean>
+
+</beans>

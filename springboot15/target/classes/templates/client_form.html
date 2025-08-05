@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${client.id} == null ? 'Add Client' : 'Edit Client'">Client Form</title>
+</head>
+<body>
+    <h2 th:text="${client.id} == null ? 'Add New Client' : 'Edit Client'"></h2>
+
+    <form th:action="@{/save}" th:object="${client}" method="post">
+        <!-- Hidden field for ID (needed for edit) -->
+        <input type="hidden" th:field="*{id}" />
+
+        <p>
+            Name: <input type="text" th:field="*{name}" required />
+        </p>
+        <p>
+            Email: <input type="email" th:field="*{email}" required />
+        </p>
+        <p>
+            Phone: <input type="text" th:field="*{phone}" required />
+        </p>
+        <p>
+            Address: <input type="text" th:field="*{address}" required />
+        </p>
+
+        <button type="submit" th:text="${client.id} == null ? 'Add Client' : 'Update Client'"></button>
+    </form>
+
+    <a href="/">Back to List</a>
+</body>
+</html>

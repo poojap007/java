@@ -1,0 +1,1297 @@
+1.lab question
+
+__________________
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BookWorld - Your Online Bookstore</title>
+</head>
+<body>
+    <h1>Welcome to BookWorld</h1>
+    <img src="C:\Users\dell\Pictures\Screenshots\Screenshot 2025-08-10 141335.png" alt="Books Banner" width="100%">
+    <p>
+        BookWorld is a premier online bookstore. There’s a pendendum of a wise range of genres 
+        still need to derive generous assessment, and secure shopping experience.
+    </p>
+    <h2>Book Categories</h2>
+    <table border="1" cellpadding="8" cellspacing="0">
+        <tr>
+            <th>Category</th>
+            <th>Number of Books</th>
+            <th>Top Author</th>
+        </tr>
+        <tr>
+            <td>Fiction</td>
+            <td align="right">2,345</td>
+            <td>J.K. Rowling</td>
+        </tr>
+        <tr>
+            <td>Non-Fiction</td>
+            <td align="right">1,789</td>
+            <td>Malcolm Gladwell</td>
+        </tr>
+        <tr>
+            <td>Children's</td>
+            <td align="right">1,234</td>
+            <td>Roald Dahl</td>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td align="right">980</td>
+            <td>Stephen Hawking</td>
+        </tr>
+    </table>
+    <h2>Best-Sellers</h2>
+    <ol>
+        <li>The Great Gatsby by F. Scott Fitzgerald</li>
+        <li>To Kill a Mockingbird by Harper Lee</li>
+        <li>1984 by George Orwell</li>
+        <li>The Catcher in the Rye by J.D. Salinger</li>
+        <li>The Hobbit by J.R.R. Tolkien</li>
+    </ol>
+    <h2>Upcoming Releases</h2>
+    <ul>
+        <li>The Midnight Library</li>
+        <li>Project Hail Mary</li>
+        <li>The Four Winds</li>
+        <li>Kiara and the Sun</li>
+        <li>The Lincoln Highway</li>
+    </ul>
+    <h2>Book Preview</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/1VQ_3sBZEm0" 
+        title="Book Preview" frameborder="0" allowfullscreen></iframe>
+    <h2>Register</h2>
+    <form>
+        <label>Name:</label><br>
+        <input type="text" name="name"><br><br>
+        <label>Email:</label><br>
+        <input type="email" name="email"><br><br>
+        <label>Favorite Genre:</label><br>
+        <select name="genre">
+            <option value="Fiction">Fiction</option>
+            <option value="Non-Fiction">Non-Fiction</option>
+            <option value="Children">Children's</option>
+            <option value="Science">Science</option>
+        </select><br><br>
+        <label>Comments:</label><br>
+        <textarea name="comments" rows="4" cols="40"></textarea><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <h2>Book Links</h2>
+    <ul>
+        <li><a href="https://www.goodreads.com" target="_blank">Goodreads (opens in new tab)</a></li>
+        <li><a href="https://www.nytimes.com/section/books">NY Times Books</a></li>
+        <li><a href="https://bookriot.com">Book Riot</a></li>
+    </ul>
+    <h2>Contact Us</h2>
+    <p>
+        <strong>Address:</strong> 123 Book Street, Reading City, USA<br>
+        <strong>Phone:</strong> +1 555-123-4567<br>
+        <strong>Email:</strong> contact@bookworld.com
+    </p>
+</body>
+</html>
+
+
+2.lab question
+
+_________________
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Conferences Registration Form</title>
+</head>
+<body>
+    <h2 style="text-align:center; font-weight:bold;">ONLINE CONFERENCES REGISTRATION FORM</h2>
+    <form action="submit_form.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+        <table>
+            <tr>
+                <td colspan="2" style="font-weight:bold;">Personal Information</td>
+            </tr>
+            <tr>
+                <td>Full Name</td>
+                <td><input type="text" name="fullname"></td>
+            </tr>
+            <tr>
+                <td>Email Address</td>
+                <td>
+                    <input type="text" name="email"><br>
+                    <small>format: user@example.com</small>
+                </td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gender" value="Male"> Male
+                    <input type="radio" name="gender" value="Female"> Female
+                </td>
+            </tr>
+            <tr>
+                <td>Country</td>
+                <td>
+                    <select name="country">
+                        <option>--Select--</option>
+                        <option>India</option>
+                        <option>USA</option>
+                        <option>UK</option>
+                        <option>Canada</option>
+                        <option>Australia</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Profile Photo Upload</td>
+                <td><input type="file" name="profile"></td>
+            </tr>
+        
+            <tr>
+                <td colspan="2" style="font-weight:bold;">Account Preferences</td>
+            </tr>
+            <tr>
+                <td>Username</td>
+                <td><input type="text" name="username"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="password"></td>
+            </tr>
+            <tr>
+                <td>Confirm Password</td>
+                <td><input type="password" name="confirmpassword"></td>
+            </tr>
+            <tr>
+                <td>Interests</td>
+                <td>
+                    <input type="checkbox" name="interests" value="Web Development"> Web Development
+                    <input type="checkbox" name="interests" value="AI"> AI
+                    <input type="checkbox" name="interests" value="Cloud"> Cloud
+                </td>
+            </tr>
+            <tr>
+                <td>Preferred Contact Method</td>
+                <td>
+                    <input type="radio" name="contact" value="Email"> Email
+                    <input type="radio" name="contact" value="Phone"> Phone
+                </td>
+            </tr>
+            <tr>
+                <td>Special Requirements / Comments</td>
+                <td><textarea name="comments" rows="3" cols="30"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="font-weight:bold;">Payment Details</td>
+            </tr>
+            <tr>
+                <td>Payment Method</td>
+                <td>
+                    <select name="payment">
+                        <option>--Select--</option>
+                        <option>Credit Card</option>
+                        <option>Debit Card</option>
+                        <option>PayPal</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Card Number</td>
+                <td><input type="text" name="cardnumber"></td>
+            </tr>
+            <tr>
+                <td>Expiry Date</td>
+                <td>
+                    <select name="month">
+                        <option>Month</option>
+                        <option>01</option><option>02</option><option>03</option>
+                        <option>04</option><option>05</option><option>06</option>
+                        <option>07</option><option>08</option><option>09</option>
+                        <option>10</option><option>11</option><option>12</option>
+                    </select>
+                    <select name="year">
+                        <option>Year</option>
+                        <option>2025</option><option>2026</option><option>2027</option>
+                        <option>2028</option><option>2029</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>CVV</td>
+                <td><input type="password" name="cvv" size="3"></td>
+            </tr>
+            <tr>
+                <td>Terms & Conditions</td>
+                <td><input type="checkbox" name="terms"> I agree to Terms</td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+        </fieldset>
+    </form>
+</body>
+</html>
+
+
+3.lab question
+
+________________
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Grocery Order</title>
+</head>
+<body>
+
+    <h2>Online Grocery Order</h2>
+
+    <form action="order.php" method="POST">
+        <fieldset>
+            <legend>Customer Details</legend>
+
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required autofocus><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required><br><br>
+
+            <label for="mobile">Mobile Number:</label><br>
+            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" placeholder="10-digit number" required><br><br>
+
+            <label for="address">Delivery Address:</label><br>
+            <textarea id="address" name="address" placeholder="Enter your address" required></textarea><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Order Details</legend>
+
+            <label>Grocery Items:</label><br>
+            <input type="checkbox" name="items[]" value="Rice"> Rice<br>
+            <input type="checkbox" name="items[]" value="Milk"> Milk<br>
+            <input type="checkbox" name="items[]" value="Bread"> Bread<br>
+            <input type="checkbox" name="items[]" value="Eggs"> Eggs<br>
+            <input type="checkbox" name="items[]" value="Sugar"> Sugar<br><br>
+
+            <label for="quantity">Quantity:</label><br>
+            <input type="number" id="quantity" name="quantity" min="1" max="10" required><br><br>
+
+            <label for="delivery-date">Delivery Date:</label><br>
+            <input type="date" id="delivery-date" name="delivery_date" required><br><br>
+
+            <label for="delivery-time">Preferred Delivery Time:</label><br>
+            <input type="time" id="delivery-time" name="delivery_time"><br><br>
+
+            <label>Payment Method:</label><br>
+            <input type="radio" name="payment" value="Cash on Delivery" required> Cash on Delivery<br>
+            <input type="radio" name="payment" value="UPI"> UPI<br>
+            <input type="radio" name="payment" value="Card"> Card<br><br>
+        </fieldset>
+        <label for="instructions">Special Instructions:</label><br>
+        <textarea id="instructions" name="instructions" placeholder="Optional"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+</html>
+
+
+4.lab question
+
+_________________
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Feedback Survey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #0066cc;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            background-color: #e6e6e6;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #0066cc;
+        }
+        main {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            flex: 3;
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        textarea {
+            height: 80px;
+        }
+        aside {
+            background: #fff8dc;
+            padding: 15px;
+            border-radius: 5px;
+            flex: 1;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #e6e6e6;
+            margin-top: 20px;
+        }
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+        input[type="submit"], input[type="reset"] {
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        input[type="reset"] {
+            background-color: white;
+            color: #0066cc;
+            border: 1px solid #0066cc;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Website Feedback Survey</h1>
+        <p>We value your opinion. Please take a minute to share your thoughts.</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
+        <form action="feedback.php" method="POST">
+       
+            <section>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="fullname">Full Name *</label>
+                    <input type="text" id="fullname" name="fullname" required>
+
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" min="10" max="100">
+                </fieldset>
+            </section>
+
+      
+            <section>
+                <fieldset>
+                    <legend>Website Rating</legend>
+                    <label for="design">Design (1–10):</label>
+                    <input type="range" id="design" name="design" min="1" max="10">
+
+                    <label>Content Quality:</label>
+                    <input type="radio" name="content" value="Excellent"> Excellent
+                    <input type="radio" name="content" value="Good"> Good
+                    <input type="radio" name="content" value="Average"> Average
+                    <input type="radio" name="content" value="Poor"> Poor
+
+                    <label for="page">Most visited page:</label>
+                    <select id="page" name="page">
+                        <option value="Home">Home</option>
+                        <option value="Blog">Blog</option>
+                        <option value="Products">Products</option>
+                        <option value="Contact">Contact</option>
+                    </select>
+                </fieldset>
+            </section>
+
+            <section>
+                <fieldset>
+                    <legend>Suggestions</legend>
+                    <textarea name="suggestions" placeholder="Write your suggestions here..."></textarea>
+                    <input type="checkbox" name="contact"> I agree to be contacted regarding my feedback
+                </fieldset>
+            </section>
+
+            <div class="buttons">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+
+        <aside>
+            <h3>Why your feedback matters</h3>
+            <p>Your feedback helps us improve our website experience for everyone. Thank you!</p>
+        </aside>
+    </main>
+
+    <footer>
+        © 2025 Website Survey
+    </footer>
+
+</body>
+</html>
+
+
+5.lab question
+
+________________
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Orders</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            padding: 20px;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        table {
+            border-collapse: separate;
+            border-spacing: 0;
+            width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: white;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        thead {
+            background-color: #f9f9f9;
+            font-weight: bold;
+        }
+        tfoot td {
+            font-weight: bold;
+            background-color: #f9f9f9;
+        }
+        tr:not(:last-child) td {
+            border-bottom: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Purchase Orders</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Order #</th>
+                <th>Date</th>
+                <th>Customer</th>
+                <th>Items</th>
+                <th>Qty</th>
+                <th>Unit Price</th>
+                <th>Line Total</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2001</td>
+                <td>2025-07-29</td>
+                <td>Asha Sharma</td>
+                <td>Basmati Rice (5 kg)</td>
+                <td>1</td>
+                <td>$24.00</td>
+                <td>$24.00</td>
+                <td>Shipped</td>
+            </tr>
+            <tr>
+                <td>2002</td>
+                <td>2025-07-30</td>
+                <td>Raman &amp; Co.</td>
+                <td>Brown Bread</td>
+                <td>3</td>
+                <td>$2.25</td>
+                <td>$6.75</td>
+                <td>Processing</td>
+            </tr>
+            <tr>
+                <td>2003</td>
+                <td>2025-08-01</td>
+                <td>Priya Patel</td>
+                <td>Assorted Snacks Box</td>
+                <td>1</td>
+                <td>$18.50</td>
+                <td>$18.50</td>
+                <td>Delivered</td>
+            </tr>
+            <tr>
+                <td>2004</td>
+                <td>2025-08-02</td>
+                <td>Vijay Enterprises</td>
+                <td>Sugar (2 kg)</td>
+                <td>2</td>
+                <td>$1.80</td>
+                <td>$3.60</td>
+                <td>Cancelled</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5"></td>
+                <td>Grand Total</td>
+                <td>$59.85</td>
+                <td>$59.85</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
+
+
+6.lab question
+
+_______________
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Lab — Gallery</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        line-height: 1.5;
+    }
+    header {
+        background-color: #2e2e2e;
+        color: white;
+        padding: 15px;
+    }
+    header h1 {
+        margin: 0;
+        font-size: 1.8em;
+    }
+    header p {
+        margin: 5px 0 0;
+        font-size: 1em;
+        color: #ccc;
+    }
+    main {
+        display: flex;
+        gap: 30px;
+        margin-top: 20px;
+    }
+    section.gallery {
+        flex: 2;
+    }
+    section.gallery h2 {
+        margin-bottom: 15px;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+    figure {
+        margin: 0;
+        text-align: center;
+    }
+    figure img, svg {
+        max-width: 100%;
+        height: auto;
+        border: 1px solid #ddd;
+    }
+    figcaption {
+        margin-top: 5px;
+        font-size: 0.9em;
+    }
+    aside {
+        flex: 1;
+    }
+    aside h2 {
+        margin-bottom: 10px;
+    }
+    hr {
+        margin: 20px 0;
+    }
+    button {
+        padding: 8px 16px;
+        background-color: white;
+        border: 1px solid #000;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Image Lab — Gallery</h1>
+    <p>Practice with &lt;img&gt;, srcset, &lt;picture&gt;, SVG, and accessibility</p>
+</header>
+
+<main>
+
+    <section class="gallery">
+        <h2>Responsive Image Gallery</h2>
+        <div class="grid">
+          
+            <figure>
+                <img src="C:\Users\dell\Pictures\Screenshots\Screenshot 2025-08-11 185345.png" alt="Basmati rice — 5 kg bag">
+                <figcaption>Basmati rice — 5 kg bag.</figcaption>
+            </figure>
+        
+            <figure>
+                <picture>
+                    
+                    <img src="C:\Users\dell\Pictures\Screenshots\Screenshot 2025-08-11 185354.png" alt="Assorted Snacks Box" loading="lazy">
+                </picture>
+                <figcaption>Assorted Snacks Box <br>(WebP served when supported).</figcaption>
+            </figure>
+          
+            <figure>
+                <svg width="100" height="60" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="truckTitle truckDesc">
+                    <title id="truckTitle">Delivery truck</title>
+                    <desc id="truckDesc">A delivery truck icon in blue and black</desc>
+                    <rect width="60" height="30" y="15" fill="#00a2ff" stroke="black"/>
+                    <rect x="60" y="15" width="40" height="30" fill="white" stroke="black"/>
+                    <circle cx="20" cy="50" r="6" fill="black"/>
+                    <circle cx="70" cy="50" r="6" fill="black"/>
+                </svg>
+                <figcaption>Delivery truck (SVG inline with accessible title/desc).</figcaption>
+            </figure>
+        
+            <figure aria-hidden="true">
+                <img src="C:\Users\dell\Pictures\Screenshots\Screenshot 2025-08-11 185401.png" alt="">
+                <figcaption>Decorative divider <br>(not read by screen readers).</figcaption>
+            </figure>
+         
+            <figure>
+                <img src="C:\Users\dell\Pictures\Screenshots\Screenshot 2025-08-11 185417.png" alt="Store map with rice and snacks aisles" usemap="#storemap">
+                <map name="storemap">
+                    <area shape="rect" coords="0,0,100,100" href="#rice" alt="Rice aisle">
+                    <area shape="rect" coords="100,0,200,100" href="#snacks" alt="Snacks aisle">
+                </map>
+                <figcaption>Click a section to navigate to that aisle (image map)</figcaption>
+            </figure>
+        </div>
+    </section>
+
+   
+    <aside>
+        <h2>Notes</h2>
+        <p>Use <code>srcset</code> and <code>&lt;picture&gt;</code> to reduce bandwidth and serve modern formats.</p>
+        <p>Add <code>loading="lazy"</code> to defer-screen images.</p>
+    </aside>
+</main>
+
+<hr>
+
+<section>
+    <h3>Submit Lab</h3>
+    <button type="submit">Submit Lab</button>
+</section>
+
+</body>
+</html>
+
+
+7.lab question
+
+_______________
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Multimedia Lab</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 700px;
+            margin: 20px auto;
+        }
+        h1 {
+            font-size: 1.8em;
+        }
+        hr {
+            margin: 20px 0;
+        }
+        video, audio, embed, iframe {
+            display: block;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>HTML5 Multimedia Lab</h1>
+    <p>This page demonstrates video, audio, embed (PDF), iframe, and inline SVG. Below is a visual preview.</p>
+
+    <h3>Video (sample.mp4)</h3>
+    <video controls poster="poster.jpg">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <h3>Audio (sample.mp3)</h3>
+    <audio controls loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <h3>Embed (document.pdf)</h3>
+    <embed src="C:\Users\dell\Downloads\ZIPKIN_SLEUTH_BRAVE_TRACING.pdf" type="application/pdf" width="200" height="200">
+    <p>If not visible, <a href="document.pdf">download document.pdf</a></p>
+
+    <h3>Iframe (demo.html)</h3>
+    <iframe src="demo.html" width="100%" height="200" title="Demo HTML Preview"></iframe>
+    <p>Preview created for the HTML5 Multimedia Lab. Files saved in the workspace.</p>
+
+    <h3>Inline SVG</h3>
+    <svg width="100" height="100" viewBox="0 0 100 100">
+        <polygon points="30,20 80,50 30,80" fill="red" />
+    </svg>
+
+</body>
+</html>
+
+
+8.lab question
+
+_______________
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Store Catalog</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            margin-top: 20px;
+            color: #333;
+        }
+        p.tagline {
+            color: #555;
+            margin-bottom: 30px;
+        }
+        .product-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .product-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 250px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .product-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .price {
+            font-weight: bold;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .buy-btn {
+            display: inline-block;
+            padding: 10px 15px;
+            color: white;
+            background-color: #007bff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .buy-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Furniture Store Catalog</h1>
+    <p class="tagline">Find the best furniture for your home</p>
+
+    <div class="product-container">
+      
+        <div class="product-card" style="background-color: #f0f8ff;">
+            <img src="C:\Users\dell\Pictures\Screenshots\Screenshot 2025-08-12 090658.png" alt="Sofa">
+            <h2>Sofa</h2>
+            <p>Comfortable and stylish sofa</p>
+            <p class="price">$499</p>
+            <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img src="C:\Users\dell\Pictures\Screenshots\Screenshot 2025-08-12 090708.png" alt="Dining Table">
+            <h2 style="color: black;">Dining Table</h2>
+            <p>Wooden dining table</p>
+            <p class="price">$299</p>
+            <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <img src="C:\Users\dell\Pictures\Screenshots\Screenshot 2025-08-12 090715.png" alt="Chair">
+            <h2>Chair</h2>
+            <p>Modern chair for any room</p>
+            <p class="price">$149</p>
+            <a href="#" class="buy-btn" style="background-color: black;">Buy Now</a>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+9.lab question
+
+_______________
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>ShopEase Online</h1>
+            <p class="tagline">Your One-Stop Shop for Everything</p>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Offers</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>MEGA SALE – UP TO 50% OFF!</h2>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Product Grid -->
+    <section class="products container">
+        <h2>Products</h2>
+        <div class="product-grid">
+            <div class="product-card sale">
+                <span class="ribbon">Sale</span>
+                <img src="C:\Users\dell\Pictures\Screenshots\Screenshot 2025-08-12 110602.png" alt="Smartwatch">
+                <h3>Smartwatch</h3>
+                <p>Smartphone, display full screen.</p>
+                <p class="price">$29.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="C:\Users\dell\Pictures\Screenshots\Screenshot 2025-08-12 110606.png" alt="Wireless Headset">
+                <h3>Wireless Headset</h3>
+                <p>Audio playback, simple design.</p>
+                <p class="price">$14.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="C:\Users\dell\Pictures\Screenshots\Screenshot 2025-08-12 110611.png" alt="Casual T-shirt">
+                <h3>Casual T-shirt</h3>
+                <p>A casual red tint. All sizes.</p>
+                <p class="price">$35.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="C:\Users\dell\Pictures\Screenshots\Screenshot 2025-08-12 110615.png" alt="Sneakers">
+                <h3>Sneakers</h3>
+                <p>Clean shoes, funky style.</p>
+                <p class="price">$79.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="C:\Users\dell\Pictures\Screenshots\Screenshot 2025-08-12 110628.png" alt="Laptop">
+                <h3>Laptop</h3>
+                <p>Lightweight, high performance.</p>
+                <p class="price">$799.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="C:\Users\dell\Pictures\Screenshots\Screenshot 2025-08-12 115535.png" alt="Sunglasses">
+                <h3>Sunglasses</h3>
+                <p>Stylish and UV protected.</p>
+                <p class="price">$49.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offer -->
+    <section class="special-offer">
+        <h2>Special Offer</h2>
+        <div class="offer-items">
+            <div class="offer-card">
+                <span class="offer-label">Limited Time Offer</span>
+                <img src="C:\Users\dell\Pictures\Screenshots\Screenshot 2025-08-12 115540.png" alt="Smartphone">
+                <p class="price">$299</p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+            <div class="offer-card">
+                <img src="C:\Users\dell\Pictures\Screenshots\Screenshot 2025-08-12 110628.png" alt="Backpack">
+                <p class="price">$89.99</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section class="reviews container">
+        <h2>Customer Reviews</h2>
+        <div class="review-list">
+            <div class="review">
+                <p><em>"Great products and excellent customer service!"</em></p>
+                <span>- John D.</span>
+            </div>
+            <div class="review">
+                <p><em>"I love the quality and fast shipping!"</em></p>
+                <span>- Sarah P.</span>
+            </div>
+            <div class="review">
+                <p><em>"Highly recommend this shop to everyone!"</em></p>
+                <span>- Emily R.</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Contact: shop@shopease.com | Phone: +1-234-567-890</p>
+            <p>Follow us: Facebook | Twitter | Instagram</p>
+            <p>&copy; 2025 ShopEase Online. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+
+styles.css:
+____________
+
+/* General */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+/* Header */
+header {
+    background: #1e3a8a;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    padding-bottom: 10px;
+}
+
+header h1 {
+    margin: 0;
+    padding-top: 10px;
+}
+
+.tagline {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: #2563eb;
+    border-radius: 4px;
+}
+
+/* Hero */
+.hero {
+    background: url('https://via.placeholder.com/1600x400') center/cover no-repeat;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.hero-text h2 {
+    font-size: 2em;
+}
+
+.btn {
+    background: orange;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: darkorange;
+}
+
+/* Product Grid */
+.products h2 {
+    text-align: center;
+    margin: 40px 0 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.price {
+    font-weight: bold;
+    color: green;
+}
+
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #1e40af;
+}
+
+/* Sale Ribbon */
+.ribbon {
+    position: absolute;
+    top: 10px;
+    left: -5px;
+    background: red;
+    color: white;
+    padding: 5px 10px;
+    font-size: 0.8em;
+    transform: rotate(-15deg);
+}
+
+/* Special Offer */
+.special-offer {
+    background: #fef3c7;
+    padding: 40px 15px;
+    text-align: center;
+}
+
+.offer-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.offer-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.offer-label {
+    background: red;
+    color: white;
+    padding: 5px 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+/* Reviews */
+.reviews h2 {
+    text-align: center;
+    margin: 40px 0 20px;
+}
+
+.review-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.review {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+    background: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+footer a {
+    color: lightgray;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .offer-items {
+        flex-direction: column;
+    }
+
+    .review-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}

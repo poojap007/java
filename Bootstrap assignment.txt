@@ -1,0 +1,584 @@
+1 . lab question
+
+__________________
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fancy Items</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="p-5">
+  <h1 class="display-3 fw-bold">Fancy Items</h1>
+  <p class="lead">Where style meets elegance.</p>
+  <h4 class="fw-bold mt-4">Featured Products</h4>
+  <p class="mb-2">
+    <span class="fw-bold">Vintage Vase</span><br>
+    <span class="text-muted">A beautifully crafted vase with a timeless design.</span>
+  </p>
+  <p class="mb-2">
+    <span class="fw-bold">Decorative Candle Set</span><br>
+    <span class="text-muted">Elegant candles in a modern style.</span>
+  </p>
+  <h4 class="fw-bold mt-4">Customer Review</h4>
+  <blockquote class="blockquote">
+    <p class="fst-italic mb-0">I absolutely love the quality of the items!</p>
+    <footer class="blockquote-footer">Jane Doe</footer>
+  </blockquote>
+  <p class="mt-4">
+    <span class="badge bg-success">Sale</span><br>
+    <span class="fw-bold">Luxury Scarf</span><br>
+    <span class="text-muted">A soft, luxurious scarf crafted from fine materials.</span>
+  </p>
+</body>
+</html>
+
+
+2.lab question 
+
+_______________
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Tuition Catalog</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .card {
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .card-title {
+      font-weight: bold;
+    }
+    .math-title { color: blue; }
+    .science-title { color:green; } 
+    .english-title { color: orange; }
+    .btn-math {
+      background-color: blue;
+      color: white;
+    }
+    .btn-science {
+      background-color:green;
+      color: white;
+    }
+    .btn-english {
+      background-color: orange;
+      color: white;
+    }
+    .btn:hover {
+      opacity: 0.9;
+    }
+    .badge {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+  </style>
+</head>
+<body>
+<div class="container py-5">
+  <h2 class="text-center mb-4">
+    📚 <strong>Professional Tuition Catalog</strong>
+  </h2>
+  <div class="row g-4">
+    <div class="col-lg-4 col-md-6">
+      <div class="card position-relative h-100">
+        <span class="badge bg-success">Best Seller</span>
+        <img src="C:\Users\dell\Pictures\Screenshots\Screenshot 2025-08-12 153234.png" class="card-img-top" alt="Mathematics Tuition">
+        <div class="card-body">
+          <h5 class="card-title math-title">Mathematics Tuition</h5>
+          <p class="card-text">Expert coaching for Class 8–12. Includes weekly tests, exam preparation, and doubt clearing.</p>
+          <p><i class="bi bi-person-fill"></i> <strong>Teacher:</strong> Mr. Raj Kumar</p>
+          <p><i class="bi bi-clock-fill"></i> <strong>Duration:</strong> 3 Months</p>
+          <p>₹ <strong>Fee:</strong> ₹5,000</p>
+          <a href="#" class="btn btn-math w-100">Enroll Now</a>
+        </div>
+        <div class="card-footer text-center text-muted">Limited seats available!</div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <div class="card position-relative h-100">
+        <img src="C:\Users\dell\Pictures\Screenshots\Screenshot 2025-08-12 153240.png" class="card-img-top" alt="Science Tuition">
+        <div class="card-body">
+          <h5 class="card-title science-title">Science Tuition</h5>
+          <p class="card-text">Covers Physics, Chemistry and Biology. Perfect for board & competitive exams.</p>
+          <p><i class="bi bi-person-fill"></i> <strong>Teacher:</strong> Mrs. Priya Sharma</p>
+          <p><i class="bi bi-clock-fill"></i> <strong>Duration:</strong> 4 Months</p>
+          <p>₹ <strong>Fee:</strong> ₹6,500</p>
+          <a href="#" class="btn btn-science w-100">Enroll Now</a>
+        </div>
+        <div class="card-footer text-center text-muted">Hurry! Classes filling fast</div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <div class="card position-relative h-100">
+        <img src="C:\Users\dell\Pictures\Screenshots\Screenshot 2025-08-12 153247.png" class="card-img-top" alt="English Tuition">
+        <div class="card-body">
+          <h5 class="card-title english-title">English Tuition</h5>
+          <p class="card-text">Grammar, vocabulary, and speaking skills for school and professional needs.</p>
+          <p><i class="bi bi-person-fill"></i> <strong>Teacher:</strong> Mr. Anil Verma</p>
+          <p><i class="bi bi-clock-fill"></i> <strong>Duration:</strong> 2 Months</p>
+          <p>₹ <strong>Fee:</strong> ₹4,000</p>
+          <a href="#" class="btn btn-english w-100">Enroll Now</a>
+        </div>
+        <div class="card-footer text-center text-muted">Weekend batches available</div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
+
+3.lab question 
+
+_______________
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Online Pooja Store</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .navbar-custom {
+      background-color: #fbc02d; 
+    }
+    .navbar-brand {
+      font-weight: bold;
+    }
+    .form-control {
+      border-radius: 0.375rem 0 0 0.375rem;
+    }
+    .btn-search {
+      border-radius: 0 0.375rem 0.375rem 0;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Online Pooja Store</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              Products
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Pooja Kits</a></li>
+              <li><a class="dropdown-item" href="#">Idols</a></li>
+              <li><a class="dropdown-item" href="#">Flowers</a></li>
+              <li><a class="dropdown-item" href="#">Incense Sticks</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Offers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Cart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control" type="search" placeholder="Search products..." aria-label="Search">
+          <button class="btn btn-danger btn-search" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</body>
+</html>
+
+
+4.lab question
+
+_______________
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tirupati Temple Darshan Booking Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .card {
+      max-width: 500px;
+      margin: auto;
+      border-radius: 15px;
+    }
+    .temple-logo {
+      width: 50px;
+    }
+  </style>
+</head>
+<body>
+<div class="container py-5">
+  <div class="card shadow p-4">
+    <div class="text-center mb-4">
+      <img src="C:\Users\dell\Pictures\Screenshots\Screenshot 2025-08-12 155322.png" alt="Temple Logo" class="temple-logo mb-2">
+      <h5 class="fw-bold">Tirupati Temple Darshan Booking Form</h5>
+    </div>
+    <form class="needs-validation" novalidate>
+      <div class="mb-3">
+        <label class="form-label">Full Name</label>
+        <input type="text" class="form-control" required>
+        <div class="invalid-feedback">Please enter your full name.</div>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Email Address</label>
+        <input type="email" class="form-control" required>
+        <div class="invalid-feedback">Please enter a valid email.</div>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Mobile Number</label>
+        <div class="input-group">
+          <span class="input-group-text">+91</span>
+          <input type="tel" class="form-control" pattern="[0-9]{10}" required>
+          <div class="invalid-feedback">Enter a valid 10-digit mobile number.</div>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label class="form-label d-block">Gender</label>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="gender" value="Male" required>
+          <label class="form-check-label">Male</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="gender" value="Female" required>
+          <label class="form-check-label">Female</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="gender" value="Other" required>
+          <label class="form-check-label">Other</label>
+        </div>
+        <div class="invalid-feedback d-block">Please select your gender.</div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label class="form-label">Darshan Date</label>
+          <input type="date" class="form-control" required>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Darshan Time Slot</label>
+          <select class="form-select" required>
+            <option value="">Select</option>
+            <option>Morning</option>
+            <option>Afternoon</option>
+            <option>Evening</option>
+          </select>
+        </div>
+      </div>
+      <div class="mb-3 form-floating">
+        <input type="number" class="form-control" id="tickets" min="1" max="10" placeholder="Number of Tickets" required>
+        <label for="tickets">Number of Tickets</label>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Seva Type</label><br>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" value="Archana">
+          <label class="form-check-label">Archana</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" value="Abhishekam">
+          <label class="form-check-label">Abhishekam</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" value="Special Entry Darshan">
+          <label class="form-check-label">Special Entry Darshan</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" value="Suprabhata Seva">
+          <label class="form-check-label">Suprabhata Seva</label>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">ID Proof Upload 
+          <span data-bs-toggle="tooltip" title="Upload Aadhar, Passport, or Voter ID in PDF/Image format">(?)</span>
+        </label>
+        <input type="file" class="form-control" accept=".jpg,.jpeg,.png,.pdf" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Address</label>
+        <textarea class="form-control" rows="2" required></textarea>
+      </div>
+      <div class="d-grid mb-2">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+      <div class="d-grid">
+        <button type="reset" class="btn btn-secondary">Reset</button>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="modal fade" id="confirmModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center">
+      <div class="modal-header">
+        <h5 class="modal-title">Booking Confirmed</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        Your Tirupati Darshan Booking is Confirmed!
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-success" data-bs-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+5.lab question
+
+________________
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Market</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .card {
+            height: 100%;
+        }
+        .navbar {
+            background-color: #2c2c2c;
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+        footer {
+            background-color: #f8f9fa;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Share Market</a>
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Market Trends</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Top Gainers</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Top Losers</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container my-4">
+    <div class="row g-4">
+    
+        <div class="col-md-4">
+            <div class="card text-center">
+                <div class="card-body">
+                    <img src="C:\Users\dell\Pictures\Screenshots\Screenshot 2025-08-12 164909.png" alt="AAPL" style="height:50px;">
+                    <h5 class="card-title mt-2">AAPL</h5>
+                    <p class="card-text fw-bold">$150.00</p>
+                    <p class="card-text text-success fw-bold">+2.15%</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card text-center">
+                <div class="card-body">
+                    <img src="C:\Users\dell\Pictures\Screenshots\Screenshot 2025-08-12 164915.png" alt="GOOG" style="height:50px;">
+                    <h5 class="card-title mt-2">GOOG</h5>
+                    <p class="card-text fw-bold">$2,800.00</p>
+                    <p class="card-text text-danger fw-bold">-1.05%</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card text-center">
+                <div class="card-body">
+                    <img src="C:\Users\dell\Pictures\Screenshots\Screenshot 2025-08-12 164921.png" alt="AMZN" style="height:50px;">
+                    <h5 class="card-title mt-2">AMZN</h5>
+                    <p class="card-text fw-bold">5,000,000</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row g-4 mt-1">
+    
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Trending Stocks</h5>
+                    <div class="d-flex justify-content-between">
+                        <span>AAPL</span> <span class="text-success fw-bold">+2.15%</span>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <span>MSFT</span> <span class="text-success fw-bold">+1.25%</span>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <span>TSLA</span> <span class="text-danger fw-bold">-0.75%</span>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <span>FB</span> <span class="text-success fw-bold">+0.80%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Market Summary</h5>
+                    <p class="card-text">
+                        The share market has been performing positively, with major indices showing an upward trend.
+                        Investors are optimistic about the economic recovery and corporate earnings.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer class="text-center">
+    <p class="mb-0">Data for educational purposes only — Share Market 2025</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+6.lab question 
+
+_______________
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dream Homes</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .btn:hover {
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      transform: translateY(-1px);
+      transition: all 0.2s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Dream Homes</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Properties</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container text-center my-5">
+  <h1 class="display-4 fw-bold">Find Your Dream Home</h1>
+  <p class="lead text-muted">Best properties at the best prices</p>
+</div>
+<div class="container mb-5">
+  <div class="row g-4">
+    
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <img src="C:\Users\dell\Pictures\Screenshots\Screenshot 2025-08-12 170832.png" class="card-img-top" alt="Beautiful Family House">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Beautiful Family House</h5>
+          <p class="card-text">A spacious family house with a large garden and modern amenities.</p>
+          <a href="#" class="btn btn-primary btn-sm me-2">View Details</a>
+          <a href="#" class="btn btn-success btn-sm">Book Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <img src="C:\Users\dell\Pictures\Screenshots\Screenshot 2025-08-12 170840.png" class="card-img-top" alt="Modern Apartment">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Modern Apartment</h5>
+          <p class="card-text">A stylish apartment in the city center with a sleek design.</p>
+          <a href="#" class="btn btn-primary btn-sm me-2">View Details</a>
+          <a href="#" class="btn btn-success btn-sm">Book Now</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <img src="C:\Users\dell\Pictures\Screenshots\Screenshot 2025-08-12 170849.png" class="card-img-top" alt="Luxury Villa">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Luxury Villa</h5>
+          <p class="card-text">An elegant villa with a spacious interior and a beautiful garden.</p>
+          <a href="#" class="btn btn-primary btn-sm me-2">View Details</a>
+          <a href="#" class="btn btn-success btn-sm">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="bg-dark text-white text-center py-3">
+  © 2025 Dream Homes. All rights reserved.
+</footer>
+</body>
+</html>

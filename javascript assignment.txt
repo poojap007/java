@@ -1,0 +1,834 @@
+1. lab question 
+
+_________________
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Game</title>
+    <meta charset="UTF-8">
+    <script>
+        function startQuiz() {
+           
+            alert("Welcome to the Quiz Game!");
+
+           
+            let userName = prompt("What is your name?");
+
+            if (!userName) {
+                alert("You didn't enter your name. Let's call you 'Player'.");
+                userName = "Player";
+            }
+
+          
+            let isReady = confirm(`Hello ${userName}, are you ready for the quiz?`);
+
+            if (isReady) {
+              
+                let answer = prompt("What is the capital of India?\nA) hyderabad\nB) chennai\nC) delhi\nD) mysore");
+
+               
+                if (answer && answer.toLowerCase() === "c" || answer.toLowerCase() === "delhi") {
+                    alert(" Correct! The capital of india is delhi.");
+                } else {
+                    alert(" Wrong! The correct answer is delhi.");
+                }
+            } else {
+                alert("Okay! Come back when you are ready. Goodbye!");
+            }
+        }
+    </script>
+</head>
+<body onload="startQuiz()">
+</body>
+</html>
+
+
+2.lab question
+
+________________
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Income Tax Calculator</title>
+    <meta charset="UTF-8">
+    <script>
+        function calculateTax() {
+          
+            let fullName = prompt("Enter your full name:");
+            let panNumber = prompt("Enter your PAN number (10 characters, uppercase):");
+            let dobInput = prompt("Enter your Date of Birth (YYYY-MM-DD):");
+            let annualIncome = parseFloat(prompt("Enter your Annual Income (₹):"));
+
+            if (!panNumber || panNumber.length !== 10 || panNumber !== panNumber.toUpperCase()) {
+                alert("Invalid PAN number! It must be exactly 10 uppercase characters.");
+                return;
+            }
+
+            let dob = new Date(dobInput);
+            if (isNaN(dob)) {
+                alert("Invalid Date of Birth format!");
+                return;
+            }
+            let today = new Date();
+            let age = today.getFullYear() - dob.getFullYear();
+            let monthDiff = today.getMonth() - dob.getMonth();
+            if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < dob.getDate())) {
+                age--;
+            }
+
+            let tax = 0;
+            if (annualIncome <= 250000) {
+                tax = 0;
+            } else if (annualIncome <= 500000) {
+                tax = (annualIncome) * 0.05;
+            } else if (annualIncome <= 1000000) {
+                tax = (annualIncome) * 0.20;
+            } else {
+                tax = (annualIncome) * 0.30;
+            }
+
+            tax = Math.round(tax);
+
+            let result = `
+Name: ${fullName.toUpperCase()}
+PAN: ${panNumber}
+Age: ${age} years
+Annual Income: ₹ ${annualIncome}
+Calculated Tax: ₹ ${tax}
+`;
+            alert(result);
+        }
+    </script>
+</head>
+<body onload="calculateTax()">
+</body>
+</html>
+
+
+3.lab question
+
+_______________
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Comparison Demo</title>
+    <meta charset="UTF-8">
+    <script>
+        function compareValues() {
+            
+            let val1 = prompt("Enter the first value:");
+            let val2 = prompt("Enter the second value:");
+
+            let num1 = Number(val1);
+            let num2 = Number(val2);
+
+           
+            let type1 = isNaN(num1) || val1.trim() === "" ? "string" : typeof (isNaN(val1) ? val1 : val1);
+            let type2 = isNaN(num2) || val2.trim() === "" ? "string" : typeof (isNaN(val2) ? val2 : val2);
+
+            let result = `First Value: ${val1} (${typeof val1})
+Second Value: ${val2} (${typeof val2})
+
+Using ==  : ${val1 == val2} → Equality ignores type
+Using === : ${val1 === val2} → Strict equality checks type too
+Using !=  : ${val1 != val2} → Inequality ignores type
+Using !== : ${val1 !== val2} → Strict inequality because types differ
+`;
+
+            alert(result);
+        }
+    </script>
+</head>
+<body onload="compareValues()">
+</body>
+</html>
+
+
+4.lab question 
+
+________________
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bank Customers Management</title>
+    <meta charset="UTF-8">
+    <script>
+        function manageCustomers() {
+          
+            let numCustomers = parseInt(prompt("How many customers do you want to register?"));
+
+            let customers = [];
+            for (let i = 0; i < numCustomers; i++) {
+                let name = prompt(`Enter name of customer ${i + 1}:`);
+                customers.push(name);
+            }
+
+            alert("Original Customers: " + customers.join(", "));
+
+            let namesOutput = "Customers using for...of:\n";
+            for (let name of customers) {
+                namesOutput += name + "\n";
+            }
+
+            let idsOutput = "Customer IDs using for...in:\n";
+            for (let id in customers) {
+                idsOutput += id + "\n";
+            }
+
+            alert(namesOutput + "\n" + idsOutput);
+
+            let newCustomer = prompt("Enter name of new customer to add at the end:");
+            customers.push(newCustomer);
+            alert("After push('" + newCustomer + "'): " + customers.join(", "));
+
+            let removed = customers.pop();
+            alert(`After pop() [Removed: ${removed}]: ${customers.join(", ")}`);
+
+            let insertPos = parseInt(prompt("Enter the position (starting from 0) to insert a new customer:"));
+            let insertName = prompt("Enter the name of customer to insert:");
+            customers.splice(insertPos, 0, insertName);
+            alert(`After insert '${insertName}' at position ${insertPos}: ${customers.join(", ")}`);
+
+            let deletePos = parseInt(prompt("Enter the position (starting from 0) of customer to delete:"));
+            let deleted = customers.splice(deletePos, 1);
+            alert(`After delete at position ${deletePos} [Removed: ${deleted}]: ${customers.join(", ")}`);
+
+            alert("Final Customers: " + customers.join(", "));
+        }
+    </script>
+</head>
+<body onload="manageCustomers()">
+</body>
+</html>
+
+
+5.lab question
+
+________________
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Store Management</title>
+    <meta charset="UTF-8">
+    <script>
+        function manageBooks() {
+          
+            let numBooks = parseInt(prompt("How many books do you want to register?"));
+            let books = [];
+            for (let i = 0; i < numBooks; i++) {
+                let title = prompt(`Enter title of book ${i + 1}:`);
+                let author = prompt(`Enter author of book ${i + 1}:`);
+                let price = parseFloat(prompt(`Enter price of book ${i + 1} (₹):`));
+                let available = confirm(`Is "${title}" available? (OK = Yes, Cancel = No)`);
+                books.push({ title: title, author: author, price: price, available: available });
+            }
+            let allBooksOutput = "All Books:\n";
+            for (let book of books) {
+                allBooksOutput += `Title: ${book.title}, Author: ${book.author}, Price: ₹${book.price}, Available: ${book.available}\n`;
+            }
+            alert(allBooksOutput);
+            let availableBooksOutput = "Available Books:\n";
+            for (let book of books) {
+                if (book.available) {
+                    availableBooksOutput += `Title: ${book.title}, Author: ${book.author}, Price: ₹${book.price}\n`;
+                }
+            }
+            alert(availableBooksOutput);
+            let newTitle = prompt("Enter new book title:");
+            let newAuthor = prompt("Enter new book author:");
+            let newPrice = parseFloat(prompt("Enter new book price (₹):"));
+            let newAvailable = confirm("Is the new book available? (OK = Yes, Cancel = No)");
+            books.push({ title: newTitle, author: newAuthor, price: newPrice, available: newAvailable });
+            alert("After Adding:\n" + books.map(b => b.title).join(", "));
+            let updateTitle = prompt("Enter the title of the book to update price:");
+            let found = false;
+            for (let book of books) {
+                if (book.title.toLowerCase() === updateTitle.toLowerCase()) {
+                    let updatedPrice = parseFloat(prompt(`Enter new price for "${book.title}" (₹):`));
+                    book.price = updatedPrice;
+                    found = true;
+                    alert("After Price Update:\n" + `${book.title} - ₹${book.price}`);
+                    break;
+                }
+            }
+            if (!found) {
+                alert("Book not found for price update.");
+            }
+            let deleteTitle = prompt("Enter the title of the book to delete:");
+            let initialLength = books.length;
+            books = books.filter(b => b.title.toLowerCase() !== deleteTitle.toLowerCase());
+            if (books.length < initialLength) {
+                alert("After Deletion:\n" + books.map(b => b.title).join(", "));
+            } else {
+                alert("Book not found for deletion.");
+            }
+        }
+    </script>
+</head>
+<body onload="manageBooks()">
+</body>
+</html>
+
+
+6.lab question
+
+_______________
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tour Booking Form</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, button {
+            margin-top: 5px;
+            padding: 5px;
+            width: 200px;
+        }
+        .summary {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #333;
+            background: #f9f9f9;
+            width: 300px;
+        }
+    </style>
+    <script>
+        function bookTour() {
+         
+            let name = document.getElementById("fullName").value;
+            let email = document.getElementById("email").value;
+            let destination = document.getElementById("destination").value;
+            let days = parseInt(document.getElementById("days").value);
+            let travelers = parseInt(document.getElementById("travelers").value);
+
+           
+            let pricePerDay;
+            if (destination === "Ooty") {
+                pricePerDay = 2000;
+            } else if (destination === "Goa") {
+                pricePerDay = 3000;
+            } else if (destination === "Manali") {
+                pricePerDay = 4000;
+            }
+
+            let totalPrice = pricePerDay * days * travelers;
+
+          
+            document.getElementById("summary").innerHTML = `
+                <strong>Booking Summary:</strong><br>
+                Name: ${name}<br>
+                Email: ${email}<br>
+                Destination: ${destination}<br>
+                Days: ${days}<br>
+                Travelers: ${travelers}<br>
+                Total Price: ₹${totalPrice}
+            `;
+        }
+    </script>
+</head>
+<body>
+
+    <h2>Tour Booking Form</h2>
+    <form onsubmit="event.preventDefault(); bookTour();">
+        <label>Full Name:</label>
+        <input type="text" id="fullName" required>
+
+        <label>Email:</label>
+        <input type="email" id="email" required>
+
+        <label>Destination:</label>
+        <select id="destination" required>
+            <option value="">--Select--</option>
+            <option value="Ooty">Ooty</option>
+            <option value="Goa">Goa</option>
+            <option value="Manali">Manali</option>
+        </select>
+
+        <label>Number of Days:</label>
+        <input type="number" id="days" min="1" required>
+
+        <label>Number of Travelers:</label>
+        <input type="number" id="travelers" min="1" required>
+
+        <br><br>
+        <button type="submit">Book Now</button>
+    </form>
+
+    <div id="summary" class="summary"></div>
+
+</body>
+</html>
+
+
+7.lab question
+
+_______________
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sports Team Player Details</title>
+    <meta charset="UTF-8">
+    <script>
+        function showPlayers() {
+            const player1 = {
+                name: "Virat Kohli",
+                age: 36,
+                sport: "Cricket",
+                stats: {
+                    matches: 500,
+                    runs: 25000,
+                    average: 57.2
+                }
+            };
+            const player2 = {
+                name: "Lionel Messi",
+                age: 38,
+                sport: "Football",
+                stats: {
+                    matches: 800,
+                    goals: 720,
+                    assists: 300
+                }
+            };
+            const players = [player1, player2];
+            const [p1, p2] = players;
+            const { name: name1, sport: sport1, stats: { matches: matches1, runs, average } } = p1;
+            const { name: name2, sport: sport2, stats: { matches: matches2, goals, assists } } = p2;
+            let output = `
+Player ${name1} plays ${sport1}.
+Matches: ${matches1} | Runs: ${runs} | Batting Average: ${average}
+
+Player ${name2} plays ${sport2}.
+Matches: ${matches2} | Goals: ${goals} | Assists: ${assists}
+`;
+            document.getElementById("result").innerText = output;
+        }
+    </script>
+</head>
+<body onload="showPlayers()">
+
+<h2>Sports Team Player Details</h2>
+<pre id="result"></pre>
+
+</body>
+</html>
+
+
+8.lab question
+
+_______________
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Switchboard Control</title>
+    <meta charset="UTF-8">
+    <script>
+        function controlSwitchboard() {
+           
+            const buildingName = "blooms";
+            let status = "OFF";
+            const devices = ["Light", "Fan", "AC"];
+            for (var i = 0; i < devices.length; i++) {
+             
+                status = (status === "OFF") ? "ON" : "OFF";
+
+                console.log(`Checking Switch ${i + 1}: ${devices[i]} is ${status}`);
+            }
+            console.log(`All switches checked for ${buildingName}.`);
+            console.log(`Outside loop: var counter is ${i}`);
+
+            try {
+                buildingName = "glooms";
+            } catch (err) {
+                console.error("Error:", err.message);
+            }
+        }
+    </script>
+</head>
+<body onload="controlSwitchboard()">
+    <h2>Check the Console for Output</h2>
+</body>
+</html>
+
+
+9.lab question
+
+_______________
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Income Tax Calculator</title>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h2 { color: darkred; }
+        .result { margin-top: 20px; font-size: 18px; }
+    </style>
+    <script>
+      
+        let taxRecords = [];
+
+       
+        function logToConsole(name, pan, income, tax) {
+            console.log(`Name: ${name}`);
+            console.log(`PAN: ${pan}`);
+            console.log(`Annual Income: ₹ ${income}`);
+            console.log(`Calculated Tax: ₹ ${tax}`);
+        }
+
+     
+        function displayOnPage(name, pan, income, tax) {
+            document.getElementById("output").innerHTML = `
+                <strong>Name:</strong> ${name} <br>
+                <strong>PAN:</strong> ${pan} <br>
+                <strong>Annual Income:</strong> ₹ ${income} <br>
+                <strong>Calculated Tax:</strong> ₹ ${tax}
+            `;
+        }
+
+       
+        function saveToRecords(name, pan, income, tax) {
+            taxRecords.push({ name, pan, income, tax });
+            console.log("Tax Records Array:", taxRecords);
+        }
+
+      
+        function calculateTax(name, pan, income, callback) {
+            let tax = 0;
+
+      
+            if (income <= 250000) {
+                tax = 0;
+            } else if (income <= 500000) {
+                tax = (income) * 0.05;
+            } else if (income <= 1000000) {
+                tax = (income) * 0.2;
+            } else {
+                tax = (income) * 0.3;
+            }
+
+       
+            callback(name, pan, income, tax);
+        }
+
+        
+        function processTax() {
+            const name = document.getElementById("name").value;
+            const pan = document.getElementById("pan").value;
+            const income = parseFloat(document.getElementById("income").value);
+
+           
+            calculateTax(name, pan, income, function(n, p, i, t) {
+                logToConsole(n, p, i, t);
+                displayOnPage(n, p, i, t);
+                saveToRecords(n, p, i, t);
+            });
+        }
+    </script>
+</head>
+<body>
+    <h2>Income Tax Calculator (Multiple Callbacks)</h2>
+
+    <label>Name:</label>
+    <input type="text" id="name"><br><br>
+
+    <label>PAN:</label>
+    <input type="text" id="pan"><br><br>
+
+    <label>Annual Income (₹):</label>
+    <input type="number" id="income"><br><br>
+
+    <button onclick="processTax()">Calculate Tax</button>
+
+    <div class="result" id="output"></div>
+</body>
+</html>
+
+
+10.lab question 
+
+________________
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RTO Vehicle Registration</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    body { background: #f8f9fa; }
+    .progress { height: 20px; }
+    .accordion-button::after { margin-left: auto; }
+</style>
+</head>
+<body class="p-3">
+
+<div class="container">
+    <h2 class="mb-4">RTO Vehicle Registration Form</h2>
+    <div class="progress mb-3">
+        <div id="formProgress" class="progress-bar" role="progressbar" style="width: 0%"></div>
+    </div>
+
+    <form id="rtoForm" novalidate>
+        <div class="accordion" id="formAccordion">
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#ownerSection">
+                        1. Owner Details
+                    </button>
+                </h2>
+                <div id="ownerSection" class="accordion-collapse collapse show" data-bs-parent="#formAccordion">
+                    <div class="accordion-body row g-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-control" name="fullname" required>
+                            <div class="invalid-feedback">Please enter your full name.</div>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" name="email" required>
+                            <div class="invalid-feedback">Enter a valid email.</div>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Mobile (India)</label>
+                            <input type="tel" pattern="^[6-9]\d{9}$" class="form-control" name="mobile" required>
+                            <div class="invalid-feedback">Enter a valid 10-digit Indian mobile.</div>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Date of Birth</label>
+                            <input type="date" class="form-control" name="dob" required>
+                            <div class="invalid-feedback">Must be 18 years or older.</div>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Aadhaar</label>
+                            <input type="text" pattern="^\d{12}$" class="form-control" name="aadhaar" required>
+                            <div class="invalid-feedback">Enter 12-digit Aadhaar number.</div>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">PAN</label>
+                            <input type="text" pattern="[A-Z]{5}[0-9]{4}[A-Z]" class="form-control" name="pan" required>
+                            <div class="invalid-feedback">Enter valid PAN (e.g., ABCDE1234F).</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#addressSection">
+                        2. Address
+                    </button>
+                </h2>
+                <div id="addressSection" class="accordion-collapse collapse" data-bs-parent="#formAccordion">
+                    <div class="accordion-body row g-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Address Line 1</label>
+                            <input type="text" class="form-control" required>
+                            <div class="invalid-feedback">Required.</div>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">City</label>
+                            <input type="text" class="form-control" required>
+                            <div class="invalid-feedback">Required.</div>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">State</label>
+                            <select class="form-select" required>
+                                <option value="">Choose...</option>
+                                <option>Tamil Nadu</option>
+                                <option>Karnataka</option>
+                                <option>Kerala</option>
+                            </select>
+                            <div class="invalid-feedback">Select a state</div>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">PIN</label>
+                            <input type="text" pattern="^\d{6}$" class="form-control" required>
+                            <div class="invalid-feedback">Enter valid 6-digit PIN.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#declarationSection">
+                        7. Declarations
+                    </button>
+                </h2>
+                <div id="declarationSection" class="accordion-collapse collapse" data-bs-parent="#formAccordion">
+                    <div class="accordion-body">
+                        <div class="mb-3">
+                            <label id="captchaQuestion" class="form-label fw-bold"></label>
+                            <input type="number" id="captchaAnswer" class="form-control" required>
+                            <div class="invalid-feedback">Captcha incorrect.</div>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="terms" required>
+                            <label class="form-check-label" for="terms">
+                                I agree to the terms & conditions.
+                            </label>
+                            <div class="invalid-feedback">You must agree before submitting.</div>
+                        </div>
+                        <button type="submit" id="submitBtn" class="btn btn-primary" disabled>Submit Application</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="successToast" class="toast bg-success text-white" role="alert">
+        <div class="toast-body">Application submitted successfully!</div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+    const form = document.getElementById("rtoForm");
+    const progressBar = document.getElementById("formProgress");
+    const submitBtn = document.getElementById("submitBtn");
+
+    let num1 = Math.floor(Math.random() * 10) + 1;
+    let num2 = Math.floor(Math.random() * 10) + 1;
+    document.getElementById("captchaQuestion").textContent = `What is ${num1} + ${num2}?`;
+
+    function updateProgress() {
+        const requiredFields = form.querySelectorAll("input[required], select[required]");
+        let validCount = 0;
+        requiredFields.forEach(f => {
+            if (f.checkValidity()) validCount++;
+        });
+        let progress = (validCount / requiredFields.length) * 100;
+        progressBar.style.width = `${progress}%`;
+        progressBar.textContent = `${Math.round(progress)}%`;
+
+        submitBtn.disabled = !(progress === 100 && document.getElementById("terms").checked && 
+            parseInt(document.getElementById("captchaAnswer").value) === (num1 + num2));
+    }
+
+    form.querySelectorAll("input, select").forEach(el => {
+        el.addEventListener("input", updateProgress);
+        el.addEventListener("change", updateProgress);
+    });
+
+    form.addEventListener("submit", function(e){
+        e.preventDefault();
+        if (!form.checkValidity()) {
+            form.classList.add("was-validated");
+            return;
+        }
+        const captchaCorrect = parseInt(document.getElementById("captchaAnswer").value) === (num1 + num2);
+        if (!captchaCorrect) {
+            document.getElementById("captchaAnswer").classList.add("is-invalid");
+            return;
+        }
+        new bootstrap.Toast(document.getElementById("successToast")).show();
+        form.reset();
+        updateProgress();
+    });
+});
+</script>
+</body>
+</html>
+
+
+11.lab question 
+
+________________
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Share Market Portfolio Tracker</title>
+</head>
+<body>
+<script>
+function createPortfolioTracker() {
+    let portfolio = []; // private
+
+    function buyShare(company, quantity, price) {
+        portfolio.push({ company, quantity, price });
+        console.log(`Bought ${quantity} shares of ${company} at ${price} each. ₹`);
+    }
+
+    function sellShare(company, quantity) {
+        let share = portfolio.find(s => s.company === company);
+        if (share) {
+            if (share.quantity >= quantity) {
+                share.quantity -= quantity;
+                console.log(`Sold ${quantity} shares of ${company}.`);
+            } else {
+                console.log(`Not enough shares of ${company} to sell.`);
+            }
+        } else {
+            console.log(`${company} not found in portfolio.`);
+        }
+    }
+
+    function totalValue() {
+        let total = portfolio.reduce((sum, share) => sum + (share.quantity * share.price), 0);
+        console.log(`Portfolio Value: ₹${total}`);
+    }
+
+    return { buyShare, sellShare, totalValue };
+}
+
+const myPortfolio = createPortfolioTracker();
+
+let actions = parseInt(prompt("How many actions do you want to perform?"));
+
+for (let i = 0; i < actions; i++) {
+    let choice = prompt("Enter action: buy / sell / total");
+
+    if (choice.toLowerCase() === "buy") {
+        let company = prompt("Enter company name:");
+        let quantity = parseInt(prompt("Enter quantity:"));
+        let price = parseFloat(prompt("Enter price per share:"));
+        myPortfolio.buyShare(company, quantity, price);
+
+    } else if (choice.toLowerCase() === "sell") {
+        let company = prompt("Enter company name:");
+        let quantity = parseInt(prompt("Enter quantity to sell:"));
+        myPortfolio.sellShare(company, quantity);
+
+    } else if (choice.toLowerCase() === "total") {
+        myPortfolio.totalValue();
+    } else {
+        console.log("Invalid action!");
+    }
+}
+</script>
+</body>
+</html>
